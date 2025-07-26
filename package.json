@@ -1,0 +1,12 @@
+{
+  "name": "simple-nodejs-ci",
+  "version": "1.0.0",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest",
+    "build": "echo 'Build step'"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
