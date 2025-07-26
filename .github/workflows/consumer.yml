@@ -1,0 +1,9 @@
+name: Use Reusable
+on: [push]
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable-ci.yml
+    with:
+      node-version: "20"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
