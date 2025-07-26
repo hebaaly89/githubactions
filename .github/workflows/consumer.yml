@@ -2,7 +2,7 @@ name: Use Reusable
 on: [push]
 jobs:
   call-reusable:
-    uses: ./.github/workflows/reusable-ci.yml
+    uses: ./.github/workflows/reusable.yml
     with:
       node-version: "20"
     secrets:
