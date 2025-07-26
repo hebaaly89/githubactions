@@ -4,7 +4,9 @@
   "main": "sum.js",
   "scripts": {
     "test": "jest",
-    "build": "echo 'Build step'"
+    "build": "echo 'Build step'",
+    "lint": "echo 'Lint step'",
+    "deploy": "echo 'Deploy step'"
   },
   "devDependencies": {
     "jest": "^29.0.0"
