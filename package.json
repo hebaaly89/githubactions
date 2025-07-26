@@ -1,14 +1,12 @@
 {
-  "name": "simple-nodejs-ci",
-  "version": "1.0.0",
-  "main": "sum.js",
+  "name": "monorepo-root",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
   "scripts": {
-    "test": "jest",
-    "build": "echo 'Build step'",
-    "lint": "echo 'Lint step'",
-    "deploy": "echo 'Deploy step'"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
+    "test:frontend": "npm --workspace packages/frontend test",
+    "test:backend": "npm --workspace packages/backend test"
   }
 }
