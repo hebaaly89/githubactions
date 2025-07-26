@@ -8,6 +8,7 @@
   "scripts": {
     "test:frontend": "npm --workspace packages/frontend test",
     "test:backend": "npm --workspace packages/backend test",
-    "deploy:production": "echo 'Deploying to production...'"
+    "deploy:production": "echo 'Deploying to production...'",
+    "test": "npm run test:frontend && npm run test:backend"
   }
 }
